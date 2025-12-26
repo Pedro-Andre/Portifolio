@@ -1,219 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <!-- PAGE ICON-->
-    <link rel="icon" href="assets/imgs/logo-white.svg">
+    <link rel="icon" href="assets/imgs/logo-white.svg" />
 
     <!-- BOXICONS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Pedro André | Dev Full-Stack</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="particles-js"></div>
 
     <!-- HEADER -->
     <header>
-        <nav class="nav">
-            <a href="#home">
-                <img src="assets/imgs/logo-white.svg" alt="Pedro Logo" class="logo">
-            </a>
-            <div class="links">
-                <a href="#home">Home</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#techs">Techs</a>
-            </div>
-        </nav>
-        <!-- NAV MOBILE -->
-        <div class="nav-mobile-icon"></div>
-        <nav class="nav-mobile">
-            <div class="links" id="nav-links">
-                <a href="#home">Home</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#techs">Techs</a>
-            </div>
-        </nav>
+      <nav class="nav">
+        <a href="#home">
+          <img src="assets/imgs/logo-white.svg" alt="Pedro Logo" class="logo" />
+        </a>
+        <div class="links">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#techs">Techs</a>
+        </div>
+      </nav>
+      <!-- NAV MOBILE -->
+      <div class="nav-mobile-icon"></div>
+      <nav class="nav-mobile">
+        <div class="links" id="nav-links">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#techs">Techs</a>
+        </div>
+      </nav>
     </header>
 
     <!-- LOGO MOBILE -->
     <a href="#home" class="logo-mobile">
-        <img src="assets/imgs/logo-white.svg" alt="Pedro Logo" class="logo">
+      <img src="assets/imgs/logo-white.svg" alt="Pedro Logo" class="logo" />
     </a>
 
     <!-- TOP SECTION -->
-    <section class="top-section" id="home">
-        <div class="top-texts">
-            <h3>Olá, me chamo</h3>
-            <h1>Pedro André</h1>
-            <h3>e sou um Dev Full-Stack :D</h3>
+    <section class="section top-section" id="home">
+      <div class="top-texts">
+        <h3>Olá! eu sou o</h3>
+        <h1>Pedro</h1>
+        <h3>um Desenvolvedor Full-Stack</h3>
+      </div>
+    </section>
+
+    <!-- PROJETOS SECTION -->
+    <section class="section projects-section" id="projetos">
+      <h3>Projetos Selecionados</h3>
+
+      <div class="projects-container">
+        <div class="projects">
+          <div class="projectsImg">
+            <img src="assets/imgs/img-1.png" alt="Imagem Projeto" />
+            <div class="project-links">
+              <a
+                href="https://github.com/Pedro-Andre/Studyplan"
+                target="_blank"
+                class="btn-1"
+              >
+                <i class="bx bxl-github icon"></i>
+                ver código
+              </a>
+              <a
+                href="https://github.com/Pedro-Andre/Studyplan"
+                target="_blank"
+                class="btn-2"
+              >
+                <i class="bx bx-link-external icon"></i>
+                ver site
+              </a>
+            </div>
+          </div>
+
+          <p class="projects-name">Studyplan</p>
+
+          <p class="projects-name2">
+            Plataforma de organização de estudos feita com React <br />
+            <span>Techs: React, NodeJS, PostgreSQL</span>
+          </p>
         </div>
+
+        <div class="projects">
+          <div class="projectsImg">
+            <img src="assets/imgs/img-2.png" alt="Imagem Projeto" />
+            <div class="project-links">
+              <a
+                href="https://github.com/Pedro-Andre/Dashboard-Comercial"
+                target="_blank"
+                class="btn-1"
+              >
+                <i class="bx bxl-github icon"></i>
+                ver código
+              </a>
+              <a
+                href="https://app.powerbi.com/view?r=eyJrIjoiMjExZWI0MDUtZTM0YS00OGU0LWE0MGQtMTQyMzNjNjMyZjI5IiwidCI6ImE4Mjk0YjU5LTBhOTYtNDkwOS05YmU4LTY3N2E4ZWY3MjRjZSJ9"
+                target="_blank"
+                class="btn-2"
+              >
+                <i class="bx bx-link-external icon"></i>
+                ver site
+              </a>
+            </div>
+          </div>
+
+          <p class="projects-name">Dashboard Comercial</p>
+
+          <p class="projects-name2">
+            Visualizção de vendas durante os anos de uma empresa <br />
+            <span>Techs: Power BI, Excel</span>
+          </p>
+        </div>
+
+        <div class="projects">
+          <div class="projectsImg">
+            <img src="assets/imgs/img-3.png" alt="Imagem Projeto" />
+            <div class="project-links">
+              <a
+                href="https://github.com/Pedro-Andre/Checkerly-FrontEnd"
+                target="_blank"
+                class="btn-1"
+              >
+                <i class="bx bxl-github icon"></i>
+                ver código
+              </a>
+              <a
+                href="https://github.com/Pedro-Andre/Checkerly-FrontEnd"
+                target="_blank"
+                class="btn-2"
+              >
+                <i class="bx bx-link-external icon"></i>
+                ver site
+              </a>
+            </div>
+          </div>
+
+          <p class="projects-name">Checkerly</p>
+
+          <sp class="projects-name2">Plataforma para controle de eventos com QR code <br/>
+            <span>Techs: HTML, CSS e JS</span>
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="about-section" id="sobre">
-        <div class="about-container">
-            <img src="assets/imgs/me.png" alt="Eu" class="photo">
-            <div class="about-text">
-                <h3>Pedro André</h3>    
-                <p>Sou estudante de Análise e Desenvolvimento de Sistemas, com experiência em Front-End adquirida pelo curso 'Desenvolvimento Front-End' realizado no SENAI Gama. Tenho prática em desenvolvimento de páginas com HTML, CSS e JS, também já tive contato com React, React Native e TypeScript.</p>
-                
-                <div class="contact">
-                    <a href="https://www.linkedin.com/in/pedroo-andre/" target="_blank">
-                        <i class="bx bxl-linkedin icon"></i>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/Pedro-Andre" target="_blank">
-                        <i class="bx bxl-github icon"></i>
-                        Github
-                    </a>
-                    <a href="https://codepen.io/pedroo-andre/pens/public" target="_blank">
-                        <i class="bx bxl-codepen icon"></i>
-                        Codepen
-                    </a>
-                </div>
-            </div>
+    <section class="section about-section" id="sobre">
+      <div class="about-container">
+        <img src="assets/imgs/me.jpg" alt="Eu" class="photo" />
+        <div class="about-text">
+          <h3>Pedro André</h3>
+          <p>
+            Desenvolvedor Full Stack em formação, com experiência prática em
+            JavaScript, TypeScript, Node.js, React, SQL e Prisma. Atualmente,
+            estudo Análise de Dados com foco em SQL, Python, Power BI e
+            visualização de dados. Tenho compromisso em aplicar boas práticas de
+            desenvolvimento, aprender continuamente e evoluir profissionalmente
+            por meio de projetos e desafios reais.
+          </p>
+
+          <div class="contact">
+            <a href="https://www.linkedin.com/in/pedroo-andre/" target="_blank">
+              <i class="bx bxl-linkedin icon"></i>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Pedro-Andre" target="_blank">
+              <i class="bx bxl-github icon"></i>
+              Github
+            </a>
+            <a
+              href="https://codepen.io/pedroo-andre/pens/public"
+              target="_blank"
+            >
+              <i class="bx bxl-codepen icon"></i>
+              Codepen
+            </a>
+          </div>
         </div>
-        </section>
-        
-    <!-- PROJETOS SECTION -->
-    <section class="projects-section" id="projetos">
-        <h3>Projetos Selecionados</h3>
-
-        <div class="projects-container">
-            <div class="projects">
-                <div class="projectsImg">
-                    <img src="assets/imgs/img-1.png" alt="Imagem Projeto">
-                    <div class="project-links">
-                        <a href="https://github.com/Pedro-Andre/Ballistic-Overkill-" target="_blank" class="btn-1">
-                            <i class="bx bxl-github icon"></i>
-                            ver código
-                        </a>
-                        <a href="https://ballisticoverkill-webview.netlify.app/" target="_blank" class="btn-2">
-                            <i class="bx bx-link-external icon"></i>
-                            ver site
-                        </a>
-                    </div>
-                </div>
-
-                <p class="projects-name">
-                    Ballistic Overkill
-                </p>
-
-                <p class="projects-name2">
-                    Tecnologias: HTML, CSS e JS 
-                </p>
-            </div>
-
-            <div class="projects">
-                <div class="projectsImg">
-                    <img src="assets/imgs/img-2.png" alt="Imagem Projeto">
-                    <div class="project-links">
-                        <a href="https://github.com/Pedro-Andre/Simples-Analise-de-dados---Brasil" target="_blank" class="btn-1">
-                            <i class="bx bxl-github icon"></i>
-                            ver código
-                        </a>
-                        <a href="https://brazil-datanalise.netlify.app/" target="_blank" class="btn-2">
-                            <i class="bx bx-link-external icon"></i>
-                            ver site
-                        </a>
-                    </div>
-                </div>
-
-                <p class="projects-name">
-                    Análise de dados - Brasil
-                </p>
-
-                <p class="projects-name2">
-                    Tecnologias: HTML, CSS e JS
-                </p>
-            </div>
-
-            <div class="projects">
-                <div class="projectsImg">
-                    <img src="assets/imgs/img-3.png" alt="Imagem Projeto">
-                    <div class="project-links">
-                        <a href="https://github.com/Pedro-Andre/Jogo-da-Memoria
-                        " target="_blank" class="btn-1">
-                            <i class="bx bxl-github icon"></i>
-                            ver código
-                        </a>
-                        <a href="https://pedro-andre.github.io/Jogo-da-Memoria/" target="_blank" class="btn-2">
-                            <i class="bx bx-link-external icon"></i>
-                            ver site
-                        </a>
-                    </div>
-                </div>
-
-                <p class="projects-name">
-                    Jogo da memória
-                </p>
-
-                <p class="projects-name2">
-                    Tecnologias: HTML, CSS e JS
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- TECHS SECTIONS -->
-    <section class="techs-section" id="techs">
-        <h3>Techs</h3>
-        
-        <div class="techs-container">
-            <div class="tech">
-                <i class="bx bxl-html5 icon"></i>
-                <span>HTML</span>
-            </div>
+    <section class="section techs-section" id="techs">
+      <h3>Techs</h3>
 
-            <div class="tech">
-                <i class="bx bxl-css3 bx-tada-hover icon"></i>
-                <span>CSS</span>
-            </div>
-
-            <div class="tech"><i class="bx bxl-javascript bx-tada-hover icon"></i>
-                <span>Javascript</span>
-            </div>
-
-            <div class="tech"><i class="bx bxl-typescript bx-tada-hover icon"></i>
-                <span>Typescript</span>
-            </div>
-
-            <div class="tech"><i class="bx bxl-react bx-tada-hover icon"></i>
-                <span>React</span>
-            </div>
-
-            <div class="tech"><i class="bx bxl-react bx-tada-hover icon"></i>
-                <span>React Native</span>
-            </div>
-
-            <div class="tech"><i class="bx bxl-figma bx-tada-hover icon"></i>
-                <span>Figma</span>
-            </div>
-
-            <div class="tech">
-                <i class="bx bxl-git bx-tada-hover icon"></i>
-                <span>Git</span>
-            </div>
-
+      <div class="techs-container">
+        <div class="tech">
+          <i class="bx bxl-html5 icon"></i>
+          <span>HTML</span>
         </div>
+
+        <div class="tech">
+          <i class="bx bxl-css3 bx-tada-hover icon"></i>
+          <span>CSS</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-javascript bx-tada-hover icon"></i>
+          <span>Javascript</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-typescript bx-tada-hover icon"></i>
+          <span>Typescript</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-react bx-tada-hover icon"></i>
+          <span>React</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-react bx-tada-hover icon"></i>
+          <span>React Native</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-figma bx-tada-hover icon"></i>
+          <span>Figma</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-git bx-tada-hover icon"></i>
+          <span>Git</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-tux bx-tada-hover icon"></i>
+          <span>Linux</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-docker bx-tada-hover icon"></i>
+          <span>Docker</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-java bx-tada-hover icon"></i>
+          <span>Java</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-spring-boot bx-tada-hover icon"></i>
+          <span>Spring Boot</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-python bx-tada-hover icon"></i>
+          <span>Python</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-angular bx-tada-hover icon"></i>
+          <span>Angular</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-vuejs bx-tada-hover icon"></i>
+          <span>Vue</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-nodejs bx-tada-hover icon"></i>
+          <span>NodeJS</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-mongodb bx-tada-hover icon"></i>
+          <span>MongoDB</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-my-sql bx-tada-hover icon"></i>
+          <span>MySQL</span>
+        </div>
+
+        <div class="tech">
+          <i class="bx bxl-postgresql bx-tada-hover icon"></i>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
     </section>
 
     <!-- SCRPITS -->
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/particles.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
-
-</body>
+  </body>
 </html>
