@@ -1,19 +1,21 @@
-/* FONT */
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
-
 :root {
   --white: #f9f9f9;
   --white-2: #f9f9f980;
-  --black: #0a0a0a;
+  --black: #0a0d13;
+  --blue: #0af;
+  --blue-2: #0af3;
+  --blue-3: #0af7;
+  --blue-border: 0.1rem solid var(--blue-2);
   --gradient: linear-gradient(to right, #001722, #002417);
   --black2: #2e2e2e;
   --black3: #11111135;
   --font: "Red Hat Display", sans-serif;
-  --fs-h1: clamp(5rem, 5.5vw, 12rem);
+  --font-secondary: "JetBrains Mono", monospace;
+  --fs-h1: clamp(3.5rem, 5vw, 12rem);
   --fs-h3: clamp(2.6rem, 2.5vw, 6rem);
   --fs-p: clamp(1.7rem, 1.5vw + 0.5rem, 3.5rem);
-  --fs-span: clamp(1rem, 2rem, 5rem);
-  --fs-span-2: 1.6rem;
+  --fs-p-2: clamp(1.5rem, 1vw + 0.5rem, 2.7rem);
+  --fs-span: clamp(1rem, 1.5rem, 5rem);
 }
 
 * {
@@ -29,7 +31,7 @@ html {
 }
 
 body {
-  background: var(--gradient);
+  background: var(--black);
   font-family: var(--font);
   color: var(--white);
   overflow-x: hidden;
@@ -48,7 +50,6 @@ img {
 .section {
   width: 100%;
   height: auto;
-  max-width: 90%;
   margin-inline: auto;
   position: relative;
   padding-inline: 1.5rem;
@@ -65,7 +66,7 @@ canvas {
 
 .projects-section {
   min-height: 60vh;
-  margin-top: 22rem;
+  margin-top: 15rem;
 }
 
 /* PARTICLES BG */
@@ -87,7 +88,7 @@ canvas {
   height: 6rem;
   background: var(--black3);
   backdrop-filter: blur(0.5rem);
-  border: 0.1rem solid var(--white-2);
+  border: var(--blue-border);
   transform: translateX(-50%);
   position: fixed;
   left: 50%;
@@ -98,6 +99,11 @@ canvas {
   align-items: center;
   justify-content: space-around;
   z-index: 99;
+  transition: all 0.3s;
+}
+
+.nav:hover {
+  border: 0.1rem solid var(--blue-3);
 }
 
 .nav .links {
@@ -135,12 +141,23 @@ canvas {
 }
 
 /* TOP SECTION */
+.top-section .orb {
+  width: 30rem;
+  height: 55rem;
+  background: var(--blue-3);
+  border-radius: 50%;
+  filter: blur(10rem);
+  z-index: -9999;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .top-texts {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  max-width: 50rem;
   align-items: center;
   justify-content: center;
   margin-inline: auto;
@@ -149,18 +166,35 @@ canvas {
   letter-spacing: 0.25rem;
 }
 
-.top-section h1 {
+.top-texts .greetings {
   display: block;
-  font-size: var(--fs-h1);
-  font-weight: 500;
+  font-size: var(--fs-p);
   color: var(--white);
+  text-align: center;
 }
 
-.top-section h3 {
-  display: block;
-  font-size: var(--fs-h3);
-  font-weight: 400;
+.top-texts .function {
+  font-size: var(--fs-h1);
+  font-weight: 700;
   color: var(--white);
+  max-width: 50rem;
+  text-shadow: 0 0 3rem var(--white);
+  text-align: center;
+}
+
+.top-texts .resume {
+  font-size: var(--fs-p);
+  font-weight: 600;
+  margin-top: 2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.top-texts .desc {
+  font-size: var(--fs-span);
+  font-weight: 400;
+  max-width: 60rem;
+  color: var(--white-2);
   text-align: center;
 }
 
@@ -173,6 +207,18 @@ canvas {
   align-items: center;
 }
 
+.about-section .orb {
+  width: 35rem;
+  height: 35rem;
+  background: var(--blue-3);
+  border-radius: 50%;
+  filter: blur(10rem);
+  z-index: -9999;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .about-container {
   width: 100%;
   display: flex;
@@ -182,19 +228,35 @@ canvas {
   gap: 5rem;
 }
 
-.about-text {
+.about-text-container {
   flex: 1 0 50%;
   font-size: var(--fs-p);
   font-weight: 300;
   line-height: 3.5rem;
   letter-spacing: 0.1rem;
+  border: var(--blue-border);
+  border-radius: 1.5vw;
+  padding: 1rem;
+  background: var(--black);
 }
 
-.about-text h3 {
-  font-size: var(--fs-h3);
+.about-text {
   color: var(--white);
-  font-weight: 500;
+  font-size: var(--fs-p-2);
+  text-align: justify;
+}
+
+.about-text-container h3 {
+  font-size: var(--fs-p);
+  color: var(--blue);
+  font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.section.techs-section p {
+  font-size: var(--fs-p-2);
+  color: var(--white-2);
+  text-align: center;
 }
 
 .projects-section h3,
@@ -202,7 +264,7 @@ canvas {
   font-size: var(--fs-h3);
   color: var(--white);
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-block: 1.5rem;
   text-align: center;
 }
 
@@ -226,25 +288,29 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: var(--fs-span-2);
-  line-height: auto;
+  font-size: var(--fs-span);
   width: 15rem;
   height: 6rem;
   transition: all 0.3s;
   cursor: pointer;
   gap: 0.5rem;
-  position: relative;
+  border: var(--blue-border);
+  border-radius: 1rem;
 }
 
 .contact a:hover {
-  background: var(--white);
-  color: var(--black);
-  border-radius: 100vw;
+  border: 0.1rem solid var(--blue-3);
+  color: var(--blue);
+}
+
+.contact .icon {
+  font-size: var(--fs-p);
 }
 
 /* PROJECTS CONTENT */
 .projects-section h3 {
   margin-block: 4rem;
+  font-weight: 700;
 }
 
 .projects-container {
@@ -307,21 +373,15 @@ canvas {
   padding: 1rem;
   border-radius: 20rem;
   text-align: center;
-  font-size: var(--fs-span-2);
+  font-size: var(--fs-span);
   display: flex;
+  align-items: center;
   transition: all 0.3s;
 }
 
 .project-links a:hover {
   color: var(--black);
-  gap: 1rem;
   background: var(--white);
-  padding: 1rem;
-  border-radius: 20rem;
-  text-align: center;
-  font-size: var(--fs-span-2);
-  display: flex;
-  transition: all 0.3s;
 }
 
 .project-links .icon {
@@ -345,13 +405,12 @@ canvas {
 }
 
 .projects-name2 {
-  color: var(--gray);
   font-family: var(--font);
   font-size: 1.4rem;
   line-height: 1.8rem;
-  text-align: center;
   align-self: start;
   margin-left: 1.6rem;
+  color: var(--white);
 }
 
 .projects-name2 span {
@@ -361,30 +420,114 @@ canvas {
   display: block;
 }
 
-/* TECHS SECTION */
-.techs-section {
-  padding-bottom: 2.6rem;
-  min-height: 50vh;
-}
-.techs-container {
-  margin-top: 6rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  place-content: center;
-  width: 100%;
-  gap: 3.6rem 1rem;
+.projects-name2 b {
+  color: var(--blue);
 }
 
-.tech {
+/* TECHS SECTION */
+.techs-section {
+  width: 100%;
+  min-height: 65vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.techs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  width: 100%;
+  max-width: 90%;
+  gap: 2rem;
+  margin-inline: auto;
+}
+
+.techs-section h3 {
+  font-weight: 700;
+}
+
+.techs-section .sub-title {
+  margin-bottom: 3rem;
+}
+
+.techs-section .orb {
+  width: 25rem;
+  height: 25rem;
+  background: var(--blue-3);
+  border-radius: 50%;
+  filter: blur(10rem);
+  z-index: -9999;
+  position: absolute;
+  right: 10rem;
+}
+
+.techs-container .tech-card {
+  width: 100%;
   text-align: center;
   display: flex;
+  background: var(--black);
+  border: var(--blue-border);
   flex-direction: column;
+  align-items: start;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  padding: 1.5rem;
+  row-gap: 1rem;
+}
+
+.tech-card:hover {
+  border: 0.1rem solid var(--blue-3);
+}
+
+.tech-card .tech-group {
+  color: var(--blue) !important;
+  margin-bottom: 2rem;
+}
+
+.tech-card .tech-name {
+  font-size: var(--fs-span) !important;
+  font-family: var(--font-secondary);
+  color: var(--white) !important;
+}
+
+.tech-card .tech-name span {
+  color: var(--blue) !important;
+}
+
+/* FOOTER SECTION */
+.footer-section {
+  border-top: 0.2rem solid #0af2;
+  bottom: 0;
+  height: 10rem;
+  margin: 0 !important;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.tech span {
-  font-size: var(--fs-span);
+.footer-texts {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-texts p {
+  font-size: var(--fs-p-2);
+  color: var(--white-2);
+}
+
+.footer-section .footer-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 6rem;
+  flex-wrap: wrap;
+}
+
+.footer-section .footer-icon {
+  color: var(--white-2);
+  font-size: var(--fs-p);
 }
 
 .icon {

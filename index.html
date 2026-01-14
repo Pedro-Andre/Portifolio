@@ -10,6 +10,11 @@
     <!-- PAGE ICON-->
     <link rel="icon" href="assets/imgs/logo-white.svg" />
 
+    <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
     <!-- BOXICONS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -54,15 +59,20 @@
 
     <!-- TOP SECTION -->
     <section class="section top-section" id="home">
+      <div class="orb orb-top"></div>
       <div class="top-texts">
-        <h3>Olá! eu sou o</h3>
-        <h1>Pedro</h1>
-        <h3>um Desenvolvedor Full-Stack</h3>
+        <p class="greetings">Olá! eu sou o Pedro 👋</p>
+        <h1 class="function">Desenvolvedor Full-Stack</h1>
+        <p class="resume">
+          Aplicações Web | APIs | Análise de Dados
+        </p>
+        <span class="desc">Focado em construir APIs e Aplicações Web na área de desenvolvimento e Dashboards para insights na área de Dados</span>
       </div>
     </section>
 
     <!-- PROJETOS SECTION -->
     <section class="section projects-section" id="projetos">
+      
       <h3>Projetos Selecionados</h3>
 
       <div class="projects-container">
@@ -93,7 +103,7 @@
 
           <p class="projects-name2">
             Plataforma de organização de estudos feita com React <br />
-            <span>Techs: React, NodeJS, PostgreSQL</span>
+            <span><b>Techs:</b> React, NodeJS, PostgreSQL</span>
           </p>
         </div>
 
@@ -124,7 +134,7 @@
 
           <p class="projects-name2">
             Visualizção de vendas durante os anos de uma empresa <br />
-            <span>Techs: Power BI, Excel</span>
+            <span><b>Techs:</b> Power BI, Excel</span>
           </p>
         </div>
 
@@ -154,24 +164,20 @@
           <p class="projects-name">Checkerly</p>
 
           <sp class="projects-name2">Plataforma para controle de eventos com QR code <br/>
-            <span>Techs: HTML, CSS e JS</span>
+            <span><b>Techs:</b>HTML, CSS e JS</span>
         </div>
       </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="section about-section" id="sobre">
+      <div class="orb orb-about"></div>
       <div class="about-container">
         <img src="assets/imgs/me.jpg" alt="Eu" class="photo" />
-        <div class="about-text">
+        <div class="about-text-container">
           <h3>Pedro André</h3>
-          <p>
-            Desenvolvedor Full Stack em formação, com experiência prática em
-            JavaScript, TypeScript, Node.js, React, SQL e Prisma. Atualmente,
-            estudo Análise de Dados com foco em SQL, Python, Power BI e
-            visualização de dados. Tenho compromisso em aplicar boas práticas de
-            desenvolvimento, aprender continuamente e evoluir profissionalmente
-            por meio de projetos e desafios reais.
+          <p class="about-text">
+            Sou Desenvolvedor Full Stack em formação, com experiência prática no desenvolvimento de aplicações utilizando JavaScript, TypeScript, Node.js, React, SQL e Prisma. Atualmente, aprofundo meus estudos em Análise de Dados, com foco em SQL, Python, Power BI e técnicas de visualização de dados. Busco aplicar boas práticas de desenvolvimento, aprender novas tecnologias e evoluir constantemente por meio de projetos reais e desafios que gerem impacto.
           </p>
 
           <div class="contact">
@@ -196,7 +202,7 @@
     </section>
 
     <!-- TECHS SECTIONS -->
-    <section class="section techs-section" id="techs">
+    <!-- <section class="section techs-section" id="techs">
       <h3>Techs</h3>
 
       <div class="techs-container">
@@ -293,6 +299,62 @@
         <div class="tech">
           <i class="bx bxl-postgresql bx-tada-hover icon"></i>
           <span>PostgreSQL</span>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section techs-section" id="techs">
+      <div class="orb orb-tech"></div>
+        <h3>Techs</h3>
+        <p class="sub-title">Ferramentas e tecnologias que utilizo no desenvolvimento de projetos</p>
+
+        <div class="techs-container">
+          <div class="tech-card">
+            <p class="tech-group">Linguagens</p>
+            <p class="tech-name"><span>• </span>Javascript</p>
+            <p class="tech-name"><span>• </span>Typescript</p>
+            <p class="tech-name"><span>• </span>Java</p>
+            <p class="tech-name"><span>• </span>Python</p>
+          </div>
+        
+          <div class="tech-card">
+            <p class="tech-group">Frameworks</p>
+            <p class="tech-name"><span>• </span>Node.js</p>
+            <p class="tech-name"><span>• </span>React</p>
+            <p class="tech-name"><span>• </span>React Native</p>
+            <p class="tech-name"><span>• </span>Spring Boot</p>
+            <p class="tech-name"><span>• </span>Vue.js</p>
+          </div>
+          
+          <div class="tech-card">
+            <p class="tech-group">Dados</p>
+            <p class="tech-name"><span>• </span>Python</p>
+            <p class="tech-name"><span>• </span>Power BI</p>
+            <p class="tech-name"><span>• </span>PostgreSQL</p>
+            <p class="tech-name"><span>• </span>MySQL</p>
+            <p class="tech-name"><span>• </span>MongoDB</p>
+          </div>
+        
+          <div class="tech-card">
+            <p class="tech-group">Ferramentas</p>
+            <p class="tech-name"><span>• </span>Docker</p>
+            <p class="tech-name"><span>• </span>Git</p>
+            <p class="tech-name"><span>• </span>Figma</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="section footer-section" id="techs">
+      <div class="footer-texts">
+        <p>© Pedro André | 2026</p>
+
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/pedroo-andre/" target="_blank">
+              <i class="bx bxl-linkedin footer-icon"></i>
+            </a>
+            <a href="https://github.com/Pedro-Andre" target="_blank">
+              <i class="bx bxl-github footer-icon"></i>
+            </a>
         </div>
       </div>
     </section>
